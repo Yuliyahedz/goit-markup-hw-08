@@ -1,0 +1,16 @@
+.modal-button,
+.modal-form-button,
+.contact-form-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $lighttitle-text-color;
+    background: $accent-color; 
+    cursor: pointer;
+    border: none;
+    outline: none;     
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;    
+}

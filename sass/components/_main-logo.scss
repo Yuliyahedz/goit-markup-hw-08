@@ -1,0 +1,22 @@
+.main-logo {
+    font-family: $mainlogo-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;    
+
+    &-web-header,
+    &-web-footer {
+        color: $accent-color;
+    }
+    
+    &-studio-header {
+        color: $header-logo-color;
+    }
+    
+    &-studio-footer {
+        color: $lighttitle-text-color;
+    }
+}
+

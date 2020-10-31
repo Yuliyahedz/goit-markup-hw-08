@@ -1,0 +1,119 @@
+.footer-section {
+    max-width: 1600px;
+    background: $darksections-color;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & .container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;  
+    
+    &-address-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;    
+        color: $lighttitle-text-color;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-mail-link,
+    &-tel-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: $footer-text-color;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-address-link,
+    &-mail-link {
+        margin-bottom: 9px;
+    }
+
+    &-address-link:hover,
+    &-address-link:focus,
+    &-mail-link:hover,
+    &-mail-link:focus,
+    &-tel-link:hover,
+    &-tel-link:focus {
+        color: $accent-color;    
+    }
+}
+
+.social-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+
+.social-footer-title,
+.contact-form-title {    
+    height: 16px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $lighttitle-text-color;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row; 
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;    
+        margin-left: 93px;
+    }
+    
+    &-input {
+        width: 358px;
+        height: 50px;
+        color: $lighttitle-text-color;
+        background-color: $darksections-color;    
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-left: 16px;
+    }
+
+    &-button {
+        margin-left: 12px;
+        padding-left: 29px;
+        padding-right: 62px;
+        position: relative;
+    }
+
+    &-button-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 13px;
+        right: 28px;     
+    }
+}
+
+
+
+
+
+
