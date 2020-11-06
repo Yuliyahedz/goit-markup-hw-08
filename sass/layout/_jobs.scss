@@ -1,7 +1,10 @@
 .jobs-section {
-    padding-bottom: 94px;
+    display: none;
+    }
+@media screen and (min-width: 1200px) {
+.jobs-section {
+    display: block;
 }
-
 .jobs-list {
     display: flex;
 
@@ -36,6 +39,7 @@
             padding-top: 27px; 
         }
     }
+}
 }
 
 
