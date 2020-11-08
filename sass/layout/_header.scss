@@ -46,6 +46,11 @@
     }    
 }
 
+.menu-button:hover .icon-menu,
+.menu-button:hover .icon-cross {
+    fill: $accent-color;
+}
+
 .menu-container {
     @media screen and (max-width:767px) {     
         display: none;        
@@ -93,7 +98,8 @@
  
 .navigation-list {
     @media screen and (max-width:767px) {
-        margin-bottom: 60px;  
+        margin-bottom: 60px;    
+    
     }
     
     @media screen and (min-width:768px) {
@@ -109,14 +115,15 @@
     } 
 }
        
-.navigation-list-link {
-            
+.navigation-list-link {            
             font-weight: 500;
             font-size: 18px;
             line-height: 1.167;
             letter-spacing: 0.02em;
             color: $title-text-color; 
-            position: relative;          
+            position: relative;
+            margin-bottom: 10px;
+                    
         
         @media screen and (min-width:768px) {
             display: flex;
@@ -132,10 +139,11 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
     }     
-    
+@media screen and (min-width:767px){    
 .navigation-list .current {
             color: $accent-color;
         }
+    }
     
 .navigation-list-item:not(:last-child) { 
     @media screen and (max-width:767px) {
@@ -155,7 +163,7 @@
 .navigation-list-link::after {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: -8px;
             right: 0;
             display: block;
             width: 100%;
@@ -168,17 +176,14 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
     
-.navigation-list-link:hover::after{
+.navigation-list-link:hover::after {
             opacity: 1;
         }
     
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-        color: $accent-color;
-        
-
-    }   
-     
+        color: $accent-color;  
+    }    
 
 .address-list {
     @media screen and (min-width: 768px) { 

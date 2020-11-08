@@ -188,7 +188,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: width 1200px) {
+@media screen and (min-width: 1200px) {
   .jobs-title,
   .team-title,
   .clients-title {
@@ -442,6 +442,11 @@ img {
   }
 }
 
+.menu-button:hover .icon-menu,
+.menu-button:hover .icon-cross {
+  fill: #2196F3;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -520,6 +525,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   position: relative;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -537,8 +543,10 @@ img {
   }
 }
 
-.navigation-list .current {
-  color: #2196F3;
+@media screen and (min-width: 767px) {
+  .navigation-list .current {
+    color: #2196F3;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -562,7 +570,7 @@ img {
 .navigation-list-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -8px;
   right: 0;
   display: block;
   width: 100%;

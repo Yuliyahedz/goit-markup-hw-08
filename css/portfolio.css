@@ -188,7 +188,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: width 1200px) {
+@media screen and (min-width: 1200px) {
   .jobs-title,
   .team-title,
   .clients-title {
@@ -442,6 +442,11 @@ img {
   }
 }
 
+.menu-button:hover .icon-menu,
+.menu-button:hover .icon-cross {
+  fill: #2196F3;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -520,6 +525,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   position: relative;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -537,8 +543,10 @@ img {
   }
 }
 
-.navigation-list .current {
-  color: #2196F3;
+@media screen and (min-width: 767px) {
+  .navigation-list .current {
+    color: #2196F3;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -562,7 +570,7 @@ img {
 .navigation-list-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -8px;
   right: 0;
   display: block;
   width: 100%;
@@ -755,16 +763,16 @@ img {
   outline: none;
 }
 
-.galery-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .galery-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .galery-list-item {
-  display: flex;
-  flex-wrap: wrap;
-  width: 370px;
-  margin-right: 30px;
+  width: 100%;
+  max-width: 450px;
   margin-bottom: 30px;
   background: #FFFFFF;
   transition-property: box-sizing, box-shadow;
@@ -772,17 +780,22 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .galery-list-item {
+    width: 354px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .galery-list-item {
+    width: 370px;
+  }
+}
+
 .galery-list-item:hover, .galery-list-item:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.galery-list-item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.galery-list-item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
 }
 
 .galery-list-title {
@@ -808,6 +821,24 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) {
+  .galery-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .galery-list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .galery-list-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .galery-list-item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+  }
 }
 
 .galery-overlay {
