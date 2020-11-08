@@ -1,12 +1,33 @@
 .galery-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+    }  
 }
 
 .galery-filter {
     display: flex;
-    justify-content: center;    
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;    
+    align-content: flex-start;
+
+    @media screen and (min-width:768px){
+        flex-wrap: nowrap;
+        justify-content: center;    
+        margin-bottom: 30px;        
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+
+    &-item {
+        @media screen and (max-width:767px){
+            margin-bottom: 15px;            
+        }
+    }
+
 
     &-item:not(:last-child) {
         margin-right: 8px;

@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -8,48 +8,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/portfolio.min.css">
 </head>
-<body> -->
+<body>
     <!-- HEADER PORTFOLIO -->
-    <!-- <header class="header-section section">
-        <div class="container">        
-            
-            <nav class="navigation"> 
-
+    <header class="header-section">
+        <div class="container">       
+                           
+            <nav class="navigation">  
+                    
                 <a class="main-logo link" href="" aria-label="логотип вебстудио"> <span class="main-logo-web-header">Web</span><span class="main-logo-studio-header">Studio</span></a>
-                      
+                    
+                <button type="button" 
+                    class="menu-button"
+                    data-menu-button>
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./img/sprite.svg#icon-menu-close"></use>
+                        <use class="icon-menu" href="./img/sprite.svg#icon-menu-burger"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu-container" data-menu>
+    
                 <ul class="navigation-list list">
-                    <li class="navigation-list-item"><a class="navigation-list-link link" href="./index.html">Студио</a></li>    
-                    <li class="navigation-list-item"><a class="navigation-list-link link current" href="./portfolio.html">Портфолио</a></li>    
-                    <li class="navigation-list-item"><a class="navigation-list-link link" href="">Контакты</a></li>
-                </ul>
-            </nav>        
-        
-            <ul class="address-list list">
-
-                <li class="address-list-item"> 
-
-                    <a class="address-list-link link" href="mailto:info@devstudio.com ">
-                        <svg class="address-list-icon-mail">
-                            <use href="./img/sprite.svg#icon-envelop"></use>
-                        </svg>
-                        info@devstudio.com</a> </li>
-
-                <li class="address-list-item">
-                                    
-                    <a class="address-list-link link" href="tel:+380961111111">
-                        <svg class="address-list-icon-smartphone">
-                            <use href="./img/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a> </li>
-            </ul>
+                        <li class="navigation-list-item">                        
+                            <a class="navigation-list-link link current" href="./index.html">Студио</a></li>    
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a></li>    
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-link link" href="">Контакты</a></li>
+                </ul>                    
             
-        </div>
-    </header> -->
+                <ul class="address-list list">
+                    <li class="address-list-item"> 
+                        <a class="address-list-link link" href="mailto:info@devstudio.com ">
+                            <svg class="address-list-icon-mail">
+                                <use href="./img/sprite.svg#icon-envelop"></use>
+                            </svg>
+                            info@devstudio.com</a> </li>
+    
+                    <li class="address-list-item">                                    
+                        <a class="address-list-link link" href="tel:+380961111111">
+                            <svg class="address-list-icon-smartphone">
+                                <use href="./img/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a> </li>            
+                </ul>
+                </div>
+    
+            </nav>
+    
+        </div>             
+            
+        </header>
 
     <!--MAIN PORTFOLIO-->
-    <!-- <main> -->
+    <main>
     <!--WORK GALERY-->
-        <!-- <section class="galery-section section">
+        <section class="galery-section section">
         <div class="container">
 
             <h1 hidden>Наши работы</h1>
@@ -67,7 +81,14 @@
                <li class="galery-list-item"> 
                    <a class="galery-list-link link" href="">                       
                         <div class="galery-overlay">
-                            <img src="./img/portfolio/project1.jpg" alt="Проект Технокряк">
+
+                            <picture>
+                                <sourse srcset="./img/portfolio-mobile/portfolio1.jpg 1x, ./img/portfolio-mobile/portfolio1@2x.jpg 2x" media="(max-width: 767px)">
+                                <sourse srcset="./img/portfolio-tablet/portfolio1.jpg 1x, ./img/portfolio-tablet/portfolio1@2x.jpg 2x" media="(min-width: 768px)">
+                                <sourse srcset="./img/portfolio-desktop/portfolio1.jpg 1x, ./img/portfolio-desktop/portfolio1@2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./img/portfolio/mobile/portfolio1.jpg" alt="Проект Технокряк">
+                            </picture>
+                            
                             <div class="galery-overlay-box">
                                 <p class="galery-overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -210,7 +231,7 @@
     </main> -->
 
     <!--FOOTER-->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
         <div class="container">
     
             <div class="contacts-footer-wrapper">
@@ -222,8 +243,8 @@
                     <a class="contacts-footer-mail-link link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
                     <a class="contacts-footer-tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </address>
-    
             </div>
+    
     
             <div class="social-footer-wrapper">
     
@@ -255,9 +276,9 @@
                             </svg>
                         </a>
                     </li>
-                </ul>         
-    
+                </ul>    
             </div>
+    
     
             <div class="contact-form-wrapper">
     
@@ -279,5 +300,7 @@
     
         </div>
         </footer>
+
+<script src="/js/menu.js"></script>
 </body>
-</html> -->
+</html>
