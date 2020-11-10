@@ -1,6 +1,5 @@
 .section {
   padding-bottom: 60px;
-  width: 100%;
   min-width: 480px;
 }
 
@@ -394,7 +393,7 @@ img {
 
 .header-section {
   position: relative;
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   background: #FFFFFF;
   width: 100%;
   min-width: 480px;
@@ -702,15 +701,14 @@ img {
 .hero-section {
   max-width: 100%;
   min-width: 480px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
+  margin: 0 auto;
   background: #C4C4C4;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/heroimg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
   background-size: cover;
-  margin: 0 auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
@@ -721,7 +719,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    width: 768px;
+    min-width: 768px;
+    max-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/heroimg-tablet.jpg");
   }
 }
@@ -1030,6 +1029,7 @@ img {
 
 .clients-section {
   padding-top: 60px;
+  background: #FFFFFF;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1038,26 +1038,31 @@ img {
   }
 }
 
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 1199px) {
   .clients-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-list {
-    flex-wrap: nowrap;
+    display: flex;
     justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .clients-list-item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list-item {
+    width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
@@ -1144,6 +1149,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-section {
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
   }

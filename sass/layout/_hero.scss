@@ -1,8 +1,8 @@
 .hero-section {
     max-width: 100%;
-    min-width: 480px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    min-width: 480px;   
+    padding: 118px 0;
+    margin: 0 auto;
     background: #C4C4C4;
     text-align: center;
     background-image: linear-gradient(
@@ -10,9 +10,9 @@
         rgba(47, 48, 58, 0.4)),
         url("../img/hero/heroimg-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    text-align: center;
     background-size: cover;
-    margin: 0 auto;
+    
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
         screen and (min-resolution: 192dpi) and (min-width: 320px),
@@ -24,7 +24,8 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        min-width: 768px;
+        max-width: 100%;
         background-image: linear-gradient(
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)),     
