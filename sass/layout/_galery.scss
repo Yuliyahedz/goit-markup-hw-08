@@ -1,6 +1,6 @@
 .galery-section {
     padding-top: 60px;
-    
+
     @media screen and (min-width:1200px) {
         padding-top: 94px;
     }  
@@ -62,11 +62,9 @@
     @media screen and (min-width:768px) {  
         display: flex;
         flex-wrap: wrap;
-            }
+    }
     
     &-item {
-        width: 100%;
-        max-width: 450px;
         margin-bottom: 30px;
 
         background: $lighttitle-text-color;
@@ -81,10 +79,8 @@
         }
 
         @media screen and (min-width:1200px) {
-            width: 370px;
-                                
-        }     
-        
+            width: 370px;                               
+        }   
     }
 
     &-item:hover,
@@ -119,7 +115,7 @@
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     .galery-list-item:nth-child(2n){
         margin-right: 0;
     }
