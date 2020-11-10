@@ -1,5 +1,7 @@
 .galery-section {
     padding-top: 60px;
+    background-color: $lighttitle-text-color;
+    width: 100%;
 
     @media screen and (min-width:1200px) {
         padding-top: 94px;
@@ -66,8 +68,7 @@
     
     &-item {
         margin-bottom: 30px;
-        background: $lighttitle-text-color;
-    
+        background: $lighttitle-text-color;    
         transition-property: box-sizing, box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

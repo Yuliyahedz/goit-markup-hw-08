@@ -596,7 +596,7 @@ img {
   .address-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-left: auto;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -606,6 +606,7 @@ img {
 @media screen and (min-width: 1200px) {
   .address-list {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -701,6 +702,8 @@ img {
 
 .galery-section {
   padding-top: 60px;
+  background-color: #FFFFFF;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -878,7 +881,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-section {
-    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
   }
