@@ -7,6 +7,8 @@
 @media screen and (min-width: 1200px) {
   .section {
     padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
@@ -767,9 +769,7 @@ img {
 
 .advantages-section {
   background-color: #FFFFFF;
-  width: 100%;
   padding-top: 60px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -892,7 +892,6 @@ img {
   .jobs-section {
     display: block;
     background-color: #FFFFFF;
-    width: 100%;
   }
   .jobs-list {
     display: flex;
@@ -929,15 +928,12 @@ img {
 
 .team-section {
   background: #F5F4FA;
-  width: 100%;
   padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .team-section {
     padding-top: 94px;
-    max-width: 1600px;
-    margin: 0 auto;
   }
 }
 
@@ -1037,7 +1033,6 @@ img {
 .clients-section {
   padding-top: 60px;
   background: #FFFFFF;
-  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
